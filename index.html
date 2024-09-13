@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+<div class="sidebar">
+    <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#greaticker">잘했스티커</a></li>
+        <li><a href="#opensource">오픈 소스 활동</a></li>
+        <li><a href="#career">경력 사항</a></li>
+        <li><a href="#education">학력 사항</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <section id="contact" class="section">
+        <h1>이상승 | 2년 차 백엔드 개발자</h1>
+        <div class="contact-info">
+            <h2>Contact.</h2>
+            <p>Email. lss9209@naver.com</p>
+            <p style="margin-bottom: 20px;">Phone. 010-4080-9155</p>
+            <h2>Channel.</h2>
+            <p>Blog. <a href="https://sseung00921.tistory.com" target="_blank">https://sseung00921.tistory.com</a></p>
+            <p>GitHub. <a href="https://github.com/sseung00921" target="_blank">https://github.com/sseung00921</a></p>
+        </div>
+    </section>
+    <section id="greaticker" class="section">
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./pikachu.jpeg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="./pikachu.jpeg" alt="Image 2"></div>
+                <div class="swiper-slide"><img src="./pikachu.jpeg" alt="Image 3"></div>
+                <div class="swiper-slide"><img src="./pikachu.jpeg" alt="Image 4"></div>
+                <div class="swiper-slide"><img src="./pikachu.jpeg" alt="Image 5"></div>
+                <div class="swiper-slide"><img src="./pikachu.jpeg" alt="Image 6"></div>
+                <div class="swiper-slide"><img src="./pikachu.jpeg" alt="Image 7"></div>
+                <div class="swiper-slide"><img src="./pikachu.jpeg" alt="Image 8"></div>
+            </div>
+
+            <!-- 이전, 다음 버튼 필요시 추가 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+        <div class="content-row">
+            <div class="left-column">
+                <img src="./pikachu.jpeg" alt="Placeholder Left Image">
+            </div>
+            <div class="right-column">
+                <div class="link-item">
+                    <img src="https://via.placeholder.com/50" alt="GitHub Logo" class="round-icon">
+                    <img src="https://via.placeholder.com/50" alt="Flutter Logo" class="round-icon">
+                    <a href="https://github.com/sseung00921/Greaticker_FrontEnd_Module" target="_blank">
+                        잘했스티커 프론트엔드 모듈
+                    </a>
+                </div>
+                <div class="link-item">
+                    <img src="https://via.placeholder.com/50" alt="GitHub Logo" class="round-icon">
+                    <img src="https://via.placeholder.com/50" alt="Spring Framework Logo" class="round-icon">
+                    <a href="https://github.com/sseung00921/Greaticker_BackEnd_Module" target="_blank">
+                        잘했스티커 백엔드 모듈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                </div>
+                <div class="link-item">
+                    <img src="https://via.placeholder.com/50" alt="GitHub Logo" class="round-icon">
+                    <img src="https://via.placeholder.com/50" alt="Spring Batch Logo" class="round-icon">
+                    <a href="https://github.com/sseung00921/Greaticker_BackEnd_Batch_Module" target="_blank">
+                        잘했스티커 백엔드 배치 모듈
+                    </a>
+                </div>
+                <div class="link-item">
+                    <img src="https://via.placeholder.com/150x50" alt="PlayStore Download" class="download-icon">
+                    <img src="https://via.placeholder.com/150x50" alt="AppStore Download" class="download-icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="opensource" class="section">
+        <h2>오픈 소스 활동</h2>
+        <p>여기에 오픈 소스 활동 내용을 입력하세요.</p>
+    </section>
+
+    <section id="career" class="section">
+        <h2>경력 사항</h2>
+        <p>여기에 경력 사항 내용을 입력하세요.</p>
+    </section>
+
+    <section id="education" class="section">
+        <h2>학력 사항</h2>
+        <p>여기에 학력 사항 내용을 입력하세요.</p>
+    </section>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    new Swiper('.swiper', {
+      // autoplay: true 도 가능하지만 객체 데이터로 할당하면 추가적인 옵션 설정 가능
+      autoplay: {
+        // 자동재생 여부
+        delay: 2000, // 시작시간 설정
+      },
+      loop: true, // 반복재생 여부
+      slidesPerView: 5, // 한번에 보여줄 슬라이드 개수
+      spaceBetween: 10, // 슬라이드 사이 여백
+      centeredSlides: true, // 1번 슬라이드가 가운데 보이기
+
+      // nav 화살표 출력 시 추가
+      navigation: {
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+      },
+
+    });
+</script>
+</body>
+</html>
