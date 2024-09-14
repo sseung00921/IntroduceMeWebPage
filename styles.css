@@ -110,7 +110,7 @@ h1 {
     overflow: hidden;
     position: relative;
     height : 160vh;
-    padding : 10px;
+    padding : 16px;
 }
 
 /* Carousel 설정 수정 */
@@ -178,6 +178,7 @@ h1 {
     flex-direction: column;
     justify-content: center; /* 각 link-item을 중앙에 배치 */
     align-items: flex-start; /* 각 link-item을 섹션 오른쪽 끝에 가깝게 배치 */
+
 }
 
 .link-item {
@@ -186,6 +187,10 @@ h1 {
     align-items: center;
     justify-content: center; /* 각 link-item 안의 요소들을 좌에서 우로 중앙에 배치 */
     margin-bottom: 20px; /* 각 link-item 사이 간격 */
+    overflow: hidden; /* 부모 요소를 벗어나는 내용 숨김 */
+    text-overflow: ellipsis; /* 넘칠 경우 ... 처리 */
+    white-space: nowrap; /* 줄바꿈 방지 */
+    max-width: 100%; /* 부모 요소 너비 내에서만 표시 */
 }
 
 .round-icon {
@@ -216,17 +221,45 @@ h1 {
 #opensource {
     overflow: hidden;
     position: relative;
-    height : 100vh;
-    padding : 10px;
+    height : 72vh;
+    padding : 16px;
 }
 
 #opensource .content-title {
-    justify-content: space-between;
-    align-items: center;
-    height: 25%; /* 위 로우는 40%, 아래 로우는 60% */
     position: relative;
-    border-radius: 28px;
-    padding: 10px;
+    width: 100%; /* 섹션 전체 너비 */
+    height: 11%; /* 원하는 높이로 설정 */
+    overflow: hidden; /* 부모 요소를 넘어가는 내용을 숨김 */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#opensource .content-text {
+    position: relative;
+    width: 100%; /* 섹션 전체 너비 */
+    height: 9%; /* 원하는 높이로 설정 */
+    overflow: hidden; /* 부모 요소를 넘어가는 내용을 숨김 */
+    box-sizing: border-box;
+}
+
+#opensource .content-title h2 {
+    font-size: 32px; /* 고정된 글자 크기 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    overflow: hidden; /* 넘치는 텍스트 숨기기 */
+    text-overflow: ellipsis; /* 넘치는 텍스트 생략 */
+    flex : 2;
+    min-width: 0;
+    max-width: 100%;
+}
+
+#opensource .content-title p {
+    font-size: 16px; /* 고정된 글자 크기 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    overflow: hidden; /* 넘치는 텍스트 숨기기 */
+    text-overflow: ellipsis; /* 넘치는 텍스트 생략 */
+    flex : 1;
+    min-width: 0;
+    max-width: 100%;
 }
 
 #opensource .content-row {
@@ -260,17 +293,39 @@ h1 {
 #career {
     overflow: hidden;
     position: relative;
-    height : 50vh;
-    padding : 10px;
+    height : 64vh;
+    padding : 16px;
 }
 
 #career .content-title {
-    justify-content: space-between;
-    align-items: center;
-    height: 25%; /* 위 로우는 40%, 아래 로우는 60% */
     position: relative;
-    border-radius: 28px;
-    padding: 10px;
+    width: 100%; /* 섹션 전체 너비 */
+    height: 11%; /* 원하는 높이로 설정 */
+    overflow: hidden; /* 부모 요소를 넘어가는 내용을 숨김 */
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+#career .content-text {
+    position: relative;
+    width: 100%; /* 섹션 전체 너비 */
+    height: 9%; /* 원하는 높이로 설정 */
+    overflow: hidden; /* 부모 요소를 넘어가는 내용을 숨김 */
+    box-sizing: border-box;
+}
+
+#career .content-title h2 {
+    font-size: 32px; /* 고정된 글자 크기 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    overflow: hidden; /* 넘치는 텍스트 숨기기 */
+    text-overflow: ellipsis; /* 넘치는 텍스트 생략 */
+}
+
+#career .content-title p {
+    font-size: 16px; /* 고정된 글자 크기 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    overflow: hidden; /* 넘치는 텍스트 숨기기 */
+    text-overflow: ellipsis; /* 넘치는 텍스트 생략 */
 }
 
 #career .content-row {
@@ -296,6 +351,7 @@ h1 {
     flex-direction: column;
     justify-content: center; /* 각 link-item을 중앙에 배치 */
     align-items: flex-start; /* 각 link-item을 섹션 오른쪽 끝에 가깝게 배치 */
+    overflow: hidden;
 }
 
 
@@ -305,21 +361,35 @@ h1 {
     overflow: hidden;
     position: relative;
     height : 50vh;
-    padding : 10px;
+    padding : 16px;
 }
 
 #education .content-title {
-    justify-content: space-between;
-    align-items: center;
-    height: 20%; /* 위 로우는 40%, 아래 로우는 60% */
     position: relative;
-    border-radius: 28px;
-    padding: 10px;
+    width: 100%; /* 섹션 전체 너비 */
+    height: 10%; /* 원하는 높이로 설정 */
+    overflow: hidden; /* 부모 요소를 넘어가는 내용을 숨김 */
+    box-sizing: border-box;
+}
+
+#education .content-title {
+    position: relative;
+    width: 100%; /* 섹션 전체 너비 */
+    height: 15%; /* 원하는 높이로 설정 */
+    overflow: hidden; /* 부모 요소를 넘어가는 내용을 숨김 */
+    box-sizing: border-box;
+}
+
+#education .content-title h2 {
+    font-size: 32px; /* 고정된 글자 크기 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    overflow: hidden; /* 넘치는 텍스트 숨기기 */
+    text-overflow: ellipsis; /* 넘치는 텍스트 생략 */
 }
 
 #education .content-row {
     display: flex;
-    height: 80%;
+    height: 85%;
     padding: 20px;
 }
 
@@ -340,4 +410,6 @@ h1 {
     flex-direction: column;
     justify-content: center; /* 각 link-item을 중앙에 배치 */
     align-items: flex-start; /* 각 link-item을 섹션 오른쪽 끝에 가깝게 배치 */
+    overflow: hidden;
 }
+
