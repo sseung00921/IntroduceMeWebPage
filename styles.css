@@ -119,26 +119,16 @@ h1 {
     justify-content: space-between;
     align-items: center;
     height: 40%; /* 위 로우는 40%, 아래 로우는 60% */
-    background-color: #F3E2A9;
+    background-color: white;
     position: relative;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 28px;
 }
 
-.carousel {
-    display: flex;
-    justify: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%; /* 캐러셀이 섹션을 벗어나지 않도록 너비 100%로 */
-    border-radius: 15px; /* 모서리를 둥글게 */
-}
-
 .swiper-wrapper img {
     max-width: 100%;
     height: 60vh;
-    transition: transform 0.5s ease-in-out;
     border-radius: 28px; /* 모서리를 둥글게 */
 }
 
@@ -164,25 +154,25 @@ h1 {
 }
 
 /* 아래 로우 */
-.content-row {
+#greaticker .content-row {
     display: flex;
     height: 60%;
     padding: 20px;
 }
 
-.left-column {
+#greaticker .left-column {
     width: 100%;
     height: 100%;
 }
 
-.left-column img {
+#greaticker .left-column img {
     width: 100%;
     height: 100%;
     border-radius: 15px; /* 모서리를 둥글게 */
     border: 2px solid black; /* 검은색 테두리 */
 }
 
-.right-column {
+#greaticker .right-column {
     flex: 0.6; /* 오른쪽 칼럼 크기 */
     display: flex;
     flex-direction: column;
@@ -205,8 +195,8 @@ h1 {
 }
 
 .download-icon {
-    width: 120px;
-    height: 60px;
+    width: 252px;
+    height: 180px;
     border-radius: 24%;
     margin-right: 10px;
 }
@@ -219,4 +209,135 @@ h1 {
 
 .link-item a:hover {
     text-decoration: underline;
+}
+
+/*opensource Section*/
+
+#opensource {
+    overflow: hidden;
+    position: relative;
+    height : 100vh;
+    padding : 10px;
+}
+
+#opensource .content-title {
+    justify-content: space-between;
+    align-items: center;
+    height: 25%; /* 위 로우는 40%, 아래 로우는 60% */
+    position: relative;
+    border-radius: 28px;
+    padding: 10px;
+}
+
+#opensource .content-row {
+    display: flex;
+    height: 75%;
+    padding: 20px;
+}
+
+#opensource .left-column {
+    width: 100%;
+    height: 100%;
+}
+
+#opensource .left-column img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; /* 모서리를 둥글게 */
+    border: 2px solid black; /* 검은색 테두리 */
+}
+
+#opensource .right-column {
+    flex: 0.6; /* 오른쪽 칼럼 크기 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 각 link-item을 중앙에 배치 */
+    align-items: flex-start; /* 각 link-item을 섹션 오른쪽 끝에 가깝게 배치 */
+}
+
+/*career Section*/
+
+#career {
+    overflow: hidden;
+    position: relative;
+    height : 50vh;
+    padding : 10px;
+}
+
+#career .content-title {
+    justify-content: space-between;
+    align-items: center;
+    height: 25%; /* 위 로우는 40%, 아래 로우는 60% */
+    position: relative;
+    border-radius: 28px;
+    padding: 10px;
+}
+
+#career .content-row {
+    display: flex;
+    height: 75%;
+    padding: 20px;
+}
+
+#career .left-column {
+    width: 10%;
+    height: 100%;
+}
+
+#career .left-column img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; /* 모서리를 둥글게 */
+    border: 2px solid black; /* 검은색 테두리 */
+}
+
+#career .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 각 link-item을 중앙에 배치 */
+    align-items: flex-start; /* 각 link-item을 섹션 오른쪽 끝에 가깝게 배치 */
+}
+
+
+/*education Section*/
+
+#education {
+    overflow: hidden;
+    position: relative;
+    height : 50vh;
+    padding : 10px;
+}
+
+#education .content-title {
+    justify-content: space-between;
+    align-items: center;
+    height: 20%; /* 위 로우는 40%, 아래 로우는 60% */
+    position: relative;
+    border-radius: 28px;
+    padding: 10px;
+}
+
+#education .content-row {
+    display: flex;
+    height: 80%;
+    padding: 20px;
+}
+
+#education .left-column {
+    width: 10%;
+    height: 100%;
+}
+
+#education .left-column img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; /* 모서리를 둥글게 */
+    border: 2px solid black; /* 검은색 테두리 */
+}
+
+#education .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 각 link-item을 중앙에 배치 */
+    align-items: flex-start; /* 각 link-item을 섹션 오른쪽 끝에 가깝게 배치 */
 }
