@@ -354,6 +354,12 @@ h1 {
     overflow: hidden;
 }
 
+#career a {
+    font-size: 16px;
+    color: blue;
+    text-decoration: none;
+}
+
 
 /*education Section*/
 
@@ -412,4 +418,5 @@ h1 {
     align-items: flex-start; /* 각 link-item을 섹션 오른쪽 끝에 가깝게 배치 */
     overflow: hidden;
 }
+
 
